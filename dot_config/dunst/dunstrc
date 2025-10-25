@@ -1,0 +1,61 @@
+[global]
+# Police: tente "Adwaita" d'abord, puis Cantarell si absente
+font = Adwaita 10
+
+enable_markup = true
+format = "%s\n%b"
+
+# Position/tailles
+origin = top-right
+offset = 16x40
+width = 320
+padding = 10
+horizontal_padding = 10
+separator_height = 2
+line_height = 0
+indicate_hidden = true
+sort = true
+
+# “Ayu Dark” palette
+# Base   : bg #0A0E14, fg #B3B1AD
+# Accent : blue #39BAE6, green #7FCA9F, yellow #E6B450, orange #FF8F40, red #F07178, purple #A37ACC
+foreground = "#B3B1AD"
+background = "#0A0E14"
+frame_width = 2
+frame_color = "#39BAE6"
+separator_color = frame
+
+# Coins / transparence (nécessite un compositeur)
+corner_radius = 10
+transparency = 10
+
+# Icônes
+icon_position = left
+icon_size = 40
+max_icon_size = 64
+icon_theme = "Adwaita"
+
+# Clics
+mouse_left_click = do_action, close_current
+mouse_middle_click = close_current
+mouse_right_click = close_all
+
+# Urgences
+[urgency_low]
+timeout = 4
+background = "#0B1218"
+foreground = "#9DA0A2"
+frame_color = "#7FCA9F"   # vert doux
+
+[urgency_normal]
+timeout = 6
+background = "#0A0E14"
+foreground = "#B3B1AD"
+frame_color = "#39BAE6"   # bleu ayu
+
+[urgency_critical]
+timeout = 0
+background = "#141521"
+foreground = "#FFEAE6"
+frame_color = "#F07178"   # rouge ayu
+
